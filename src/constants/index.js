@@ -16,7 +16,7 @@ import {
   figma,
   docker,
   meta,
-  starbucks,
+  bosch,
   tesla,
   shopify,
   carrent,
@@ -42,19 +42,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Front End Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
+    title: "Back End Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "SQL",
+    icon: mobile,
+  },
+  {
+    title: "Azure",
     icon: creator,
   },
 ];
@@ -116,55 +116,32 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Half Digital Solutions",
+    company_name: "Bosch",
+    icon: bosch,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Feb 2023 - Dec 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Studying and developing personal projects to improve my technical knowledge",
+      "Learning advanced contents in C#, .NET Framework and Entity Framework, OData",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Full Stack Developer",
+    company_name: "Bosch",
+    icon: bosch,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Jan 2024 - Current Role",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing and maintaining web applications using Java and Angular as main technologies.",
+      "Working with microsservices archtecture in back-end(Java Spring Boot) and front-end(SPA), using Azure Service Bus to management data between microsservices.",
+      "Using PostgreeSQL to management data of applications.",
+      "Making Authentication and Authorization process and user management with Keycloak.",
+      "Implementing CI/CD to meet project demands with more agility and efficiency.",
+      "Organizing application infrastructure and managing development squads with Azure and AzureDevOps.",
+      "Construct REST APIs.",
+      "Applying some design patterns improve software scalability like Factory, Builder, Strategy.",
+      "Improving software integrity with Unit Test, working with TDD methodology",
     ],
   },
 ];
