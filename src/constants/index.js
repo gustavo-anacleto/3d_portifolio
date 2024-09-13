@@ -8,21 +8,24 @@ import {
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
   git,
   figma,
   docker,
-  meta,
   bosch,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
-  threejs,
+  dotnet,
+  csharp,
+  angular,
+  spring,
+  azure,
+  azureDevops,
+  java,
+  postgreSql,
 } from "../assets";
 
 export const navLinks = [
@@ -59,58 +62,103 @@ const services = [
   },
 ];
 
+const workedTime = new Date().getFullYear() - 2021;
+
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "Java",
+    icon: java,
+    workedTime: workedTime,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "Spring",
+    icon: spring,
+    workedTime: workedTime,
   },
   {
-    name: "JavaScript",
-    icon: javascript,
+    name: "C#",
+    icon: csharp,
+    workedTime: workedTime,
+  },
+  {
+    name: ".NET Framework",
+    icon: dotnet,
+    workedTime: workedTime,
   },
   {
     name: "TypeScript",
     icon: typescript,
+    workedTime: workedTime,
+  },
+  {
+    name: "Angular",
+    icon: angular,
+    workedTime: workedTime,
+  },
+  {
+    name: "JavaScript",
+    icon: javascript,
+    workedTime: workedTime,
+  },
+  {
+    name: "HTML 5",
+    icon: html,
+    workedTime: workedTime,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
+    workedTime: workedTime,
   },
   {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
+    workedTime: workedTime,
   },
   {
     name: "figma",
     icon: figma,
+    workedTime: workedTime - 1,
   },
   {
-    name: "docker",
+    name: "Tailwind CSS",
+    icon: tailwind,
+    workedTime: workedTime - 2,
+  },
+  {
+    name: "Node JS",
+    icon: nodejs,
+    workedTime: workedTime - 1,
+  },
+  {
+    name: "Postgre Sql",
+    icon: postgreSql,
+    workedTime: workedTime,
+  },
+  {
+    name: "MongoDB",
+    icon: mongodb,
+    workedTime: workedTime,
+  },
+  {
+    name: "git",
+    icon: git,
+    workedTime: workedTime,
+  },
+  {
+    name: "Docker",
     icon: docker,
+    workedTime: workedTime,
+  },
+  {
+    name: "Azure",
+    icon: azure,
+    workedTime: workedTime - 1,
+  },
+  {
+    name: "Azure Devops",
+    icon: azureDevops,
+    workedTime: workedTime - 1,
   },
 ];
 

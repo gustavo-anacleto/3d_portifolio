@@ -5,46 +5,55 @@ import CanvasLoader from '../Loader'
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
+  debugger
   return (
-      <mesh >
-        <hemisphereLight intensity={0.15} groundColor="black"></hemisphereLight>
-        <pointLight intensity={1}></pointLight>
-        <spotLight
-          position={[-20, -50, 10]}
-          angle={0.12}
-          penumbra={1}
-          intensity={1}
-          castShadow
-          shadow-mapSize={1024}
-        />
-        <primitive
-          object={computer.scene}
-          scale={isMobile ? 0.7 : 0.80}
-          position={isMobile ? [0, -3, -2.2] : [0, -3.5, -1.5]}
-          rotation={[-0.01, -0.2, -0.1]}
-        />
-      </mesh>
+    <mesh >
+      <hemisphereLight intensity={0.15} groundColor="black"></hemisphereLight>
+      <pointLight intensity={1}></pointLight>
+      <spotLight
+        position={[-20, -50, 10]}
+        angle={0.12}
+        penumbra={1}
+        intensity={1}
+        castShadow
+        shadow-mapSize={1024}
+      />
+      
+      <primitive
+        object={computer.scene}
+        scale={isMobile ? 0.6 : 0.80}
+        position={isMobile ? [0, -3, -2.2] : [0, -3.5, -1.5]}
+        rotation={[-0.01, -0.2, -0.1]}
+      />
+    </mesh>
   )
 }
 
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false)
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width: 500px)');
+    const handleResize = () => {
+      console.log(window.innerWidth)
+      setWindowWidth(window.innerWidth);
 
-    setIsMobile(mediaQuery.matches)
+      if (windowWidth <= 600) {
+        setIsMobile(true)
+        console.log(isMobile)
+      } else {
+        setIsMobile(false)
+        console.log(isMobile)
+      }
+    };
 
-    const handleMediaQueryChange = (event) => {
-      setIsMobile(event.matches)
-    }
-
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
+    window.addEventListener('resize', handleResize);
 
     return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
-    }
-  }, [isMobile])
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
 
   return (
     <Canvas

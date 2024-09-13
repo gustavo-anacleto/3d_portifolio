@@ -17,10 +17,17 @@ import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import java from "./tech/java.png"
+import dotnet from "./tech/dotnet.png"
+import csharp from "./tech/csharp.png"
+import angular from "./tech/angular.png"
+import spring from "./tech/spring.png"
+import azure from "./tech/azure.png"
+import azureDevops from "./tech/azure-devops.png"
+import postgreSql from "./tech/postgresSQL.png"
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -49,7 +56,6 @@ export {
   mongodb,
   nodejs,
   reactjs,
-  redux,
   tailwind,
   typescript,
   threejs,
@@ -60,4 +66,12 @@ export {
   carrent,
   jobit,
   tripguide,
+  dotnet,
+  csharp,
+  angular,
+  spring,
+  azure,
+  azureDevops,
+  java,
+  postgreSql
 };
