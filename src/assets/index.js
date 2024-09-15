@@ -34,7 +34,7 @@ import shopify from "./company/shopify.png";
 import bosch from "./company/bosch.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
+import driveB from "./driveB.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
@@ -63,7 +63,7 @@ export {
   shopify,
   bosch,
   tesla,
-  carrent,
+  driveB,
   jobit,
   tripguide,
   dotnet,
@@ -73,5 +73,5 @@ export {
   azure,
   azureDevops,
   java,
-  postgreSql
+  postgreSql,
 };
