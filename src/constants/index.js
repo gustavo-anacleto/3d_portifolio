@@ -95,41 +95,16 @@ const technologies = [
     icon: angular,
     workedTime: workedTime,
   },
-  // {
-  //   name: "JavaScript",
-  //   icon: javascript,
-  //   workedTime: workedTime,
-  // },
-  // {
-  //   name: "HTML 5",
-  //   icon: html,
-  //   workedTime: workedTime,
-  // },
-  // {
-  //   name: "CSS 3",
-  //   icon: css,
-  //   workedTime: workedTime,
-  // },
   {
     name: "React JS",
     icon: reactjs,
     workedTime: workedTime,
   },
-  // {
-  //   name: "figma",
-  //   icon: figma,
-  //   workedTime: workedTime - 1,
-  // },
   {
     name: "Tailwind CSS",
     icon: tailwind,
     workedTime: workedTime - 2,
   },
-  // {
-  //   name: "Node JS",
-  //   icon: nodejs,
-  //   workedTime: workedTime - 1,
-  // },
   {
     name: "Postgre Sql",
     icon: postgreSql,
@@ -148,7 +123,7 @@ const technologies = [
   {
     name: "Docker",
     icon: docker,
-    workedTime: workedTime,
+    workedTime: workedTime - 1 ,
   },
   {
     name: "Azure",

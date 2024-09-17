@@ -18,7 +18,7 @@ const Tech = () => {
           />
           <Tooltip style={{ display: 'flex', flexDirection: 'column' }} id={technologie.name}>
             <span>{technologie.name}</span>
-            <span>Worked Years: {technologie.workedTime}</span>
+            <span>Experience Time: {technologie.workedTime} years</span>
           </Tooltip>
         </div>
 
