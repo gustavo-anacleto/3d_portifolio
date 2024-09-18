@@ -6,20 +6,53 @@ import { EarthCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from "../utils/motion"
 
+const TEMPLATE_ID = 'template_iyi7vik'
+const SERVICE_ID = 'service_daz3qy1'
+const PUBLIC_KEY = 'dKG7BpZLqVrW7QP10'
+const MY_EMAIL = 'guguzim.anacleto@gmail.com'
+
 const Contact = () => {
-  const formRef = useRef()
-  const [form, setForm] = useState({
+  const defaultForm = {
     name: '',
     email: '',
     message: ''
-  })
+  }
+  const formRef = useRef()
+  const [form, setForm] = useState(defaultForm)
   const [loading, setLoading] = useState(false)
 
-  function handleChange({ target }) { }
+  function handleChange({ target }) {
+    const { name, value } = target;
 
-  function handleSubmit({ target }) { }
+    setForm({ ...form, [name]: value })
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    setLoading(true)
+    const informationsToMountEmail = {
+      from_name: form.name,
+      to_name: 'Gustavo Anacleto',
+      from_email: form.email,
+      to_email: MY_EMAIL,
+      message: form.message
+    }
+
+    emailjs.send(
+      SERVICE_ID,
+      TEMPLATE_ID,
+      informationsToMountEmail,
+      PUBLIC_KEY
+    ).then(() => {
+      alert("Thank you. I Will get back to you as soon as possible.")
+      setForm(defaultForm);
+    })
+      .catch(() => alert('Something went wrong!'))
+      .finally(() => setLoading(false))
+
+  }
   return (
-    <div className="xl:mt-12 xl:flex flex-col-reverse flex gap-10 overflow-hidden">
+    <div className="xl:mt-12 xl:flex flex gap-10 overflow-hidden">
       <motion.div
         variants={slideIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
@@ -29,7 +62,7 @@ const Contact = () => {
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="mt-12 flex flex-col gap-8"
+          className="flex flex-col gap-8"
         >
           <label className="flex flex-col">
             <span className="tex-white font-medium mb-4">Your Name</span>
@@ -77,7 +110,7 @@ const Contact = () => {
         variants={slideIn('right', 'tween', 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
-        <EarthCanvas/>
+        <EarthCanvas />
       </motion.div>
     </div>
   )

@@ -1,5 +1,29 @@
 {
-  "about-me":"About Me",
-  "experience": "Experience",
-  "projects": "Projects"
+  "roleTitleNavBar": "Full Stack Enginieer",
+  "navLink": {
+    "about": "About Me",
+    "work": "Work",
+    "contact": "Contact"
+  },
+  "hero": {
+    "headText": "Hi, i'm ",
+    "subText": "I work as a Full Stack Developer in Microsservices Achtecture, <br /> with Java(Spring Boot) and Angular"
+  },
+  "work": {
+    "headText": "Introduction",
+    "subText": "Overview.",
+    "description": "Full Stack developer, passionate about learning new technologies and determined to improve my skills,<br /> i have experience with monolithic applications, microsservices archtecture applications, <br /> working with Java Spring Boot, Angular, C# .NET and Azure"
+  },
+  "experience": {
+    "headText": "What i have done so far",
+    "subText": "Work Experience and Technologies."
+  },
+  "projects": {
+    "headText": "Meu trabalho",
+    "subText": "Projetos."
+  },
+  "contact": {
+    "headText": "Entre em contato",
+    "subText": "Contato."
+  }
 }

@@ -2,8 +2,11 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { ComputersCanvas } from './canvas'
+import { useTranslation } from 'react-i18next'
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <section className='relative w-full h-screen mx-auto'>
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7x1 
@@ -14,9 +17,11 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm <span className='text-[#915eff]'>Gustavo Anacleto</span></h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I work as a Full Stack Developer in Microsservices Achtecture, <br /> with Java(Spring Boot) and Angular
+          <h1 className={`${styles.heroHeadText} text-white`}>{t('hero.headText')}<span className='text-[#915eff]'>Gustavo Anacleto</span></h1>
+          <p
+            className={`${styles.heroSubText} mt-2 text-white-100`}
+            dangerouslySetInnerHTML={{ __html: t('hero.subText') }}
+          >
           </p>
         </div>
       </div>

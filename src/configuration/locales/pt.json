@@ -1,5 +1,30 @@
 {
-  "about-me":"Sobre Mim",
-  "experience": "Experiência",
-  "projects": "Projetos"
+  "roleTitleNavBar": "Desenvolvedor Full Stack",
+  "navLink": {
+    "about": "Sobre Mim",
+    "work": "Trabalho",
+    "contact": "Contato"
+  },
+  "hero": {
+    "headText": "Olá, eu sou ",
+    "subText": "Eu trabalho como Desenvolvedor de Software Full Stack em uma arquitetura de Microsserviços, <br /> com Java(Spring Boot) e Angular",
+    "description": "Desenvolvedor Full Stack, apaixonado por aprender novas tecnologias e determinado a aprimorar minhas habilidades. Tenho experiência com aplicações monolíticas e arquitetura de microsserviços, trabalhando com Java Spring Boot, Angular, C# .NET e Azure."
+  },
+  "work": {
+    "headText": "Introdução",
+    "subText": "Visão Geral.",
+    "description": "Desenvolvedor Full Stack, apaixonado por aprender novas tecnologias e determinado a aprimorar minhas habilidades,<br /> Tenho experiência com aplicações monolíticas e arquitetura de microsserviços,<br /> trabalhando com Java Spring Boot, Angular, C# .NET e Azure."
+  },
+  "experience": {
+    "headText": "O que eu fiz até agora",
+    "subText": "Experiência no mercado e Tecnologias."
+  },
+  "projects": {
+    "headText": "Meu trabalho",
+    "subText": "Projetos."
+  },
+  "contact": {
+    "headText": "Entre em contato",
+    "subText": "Contato."
+  }
 }

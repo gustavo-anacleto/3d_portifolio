@@ -4,10 +4,13 @@ import { styles } from '../styles'
 import { navLinks } from '../constants'
 import { logo, menu, close } from '../assets'
 import { useState } from 'react'
+import { useTranslation } from "react-i18next";
+import ToggleLanguage  from './ToggleLanguage/ToggleLanguage'
 
 const Navbar = () => {
   const [active, setActive] = useState("")
   const [toggleMenu, setToggleMenu] = useState(false)
+  const { t } = useTranslation();
 
   function handleClickRootLink() {
     setActive("")
@@ -17,9 +20,9 @@ const Navbar = () => {
   const navLinksContent = () => (
     navLinks.map(link => (
       <li key={link.id}
-        className={`${active === link.title ? 'text-white' : 'text-secondary'
-          } hover:text-white cursor-pointer`} onClick={() => setActive(link.title)}>
-        <a href={`#${link.id}`}>{link.title}</a>
+        className={`${active === link.id ? 'text-white' : 'text-secondary'
+          } hover:text-white cursor-pointer`} onClick={() => setActive(link.id)}>
+        <a href={`#${link.id}`}>{t(`navLink.${link.id}`)}</a>
       </li>
     ))
   )
@@ -27,7 +30,7 @@ const Navbar = () => {
   const navLinksMobileViewContent = () => (
     navLinks.map(link => (
       <li key={link.id}
-        className={`${active === link.title ? 'text-white' : 'text-secondary'
+        className={`${active === link.id ? 'text-white' : 'text-secondary'
           } font-poppins font-medium cursor-pointer text-[16px]`} onClick={() => {
             setToggleMenu(false)
             setActive(link.title)
@@ -45,23 +48,28 @@ const Navbar = () => {
           <img src={logo} alt="logo" className="w-10 h-10 rounded-full" />
           <p className='text-white text-[18px] flex flex-row  font-bold cursor-pointer'>
             Gustavo &nbsp;
-            <span className='sm:block hidden'>|&nbsp; Full Stack Enginieer</span>
+            <span className='sm:block hidden'>|&nbsp; {t('roleTitleNavBar')}</span>
           </p>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <div className='flex items-center'>
+        <ul className='list-none hidden sm:flex flex-row gap-10 mr-8'>
           {navLinksContent()}
         </ul>
 
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
+          <div className='sm:hidden flex flex-1 justify-end items-center mr-8'>
           <img src={toggleMenu ? close : menu} alt="menu" className='w-[28px] h-[28px] object-contain cursor-pointer' onClick={() => setToggleMenu(!toggleMenu)} />
         </div>
 
-        <div className={`${!toggleMenu ? 'hidden' : 'flex'} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
+          <div className={`${!toggleMenu ? 'hidden' : 'flex'} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl mr-8`}>
           <ul className='list-none flex justify-end items-start flex-col gap-4'>
             {navLinksMobileViewContent()}
           </ul>
         </div>
+        
+        <ToggleLanguage/>
+      </div>
+
       </div>
     </nav>
   )

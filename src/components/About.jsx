@@ -3,13 +3,14 @@ import Tilt from 'react-tilt'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { services } from '../constants'
-import { fadeIn, textVariant } from '../utils/motion'
+import { fadeIn } from '../utils/motion'
 import { SectionWrapper } from '../hoc'
-
+import { useTranslation } from 'react-i18next'
 const ServiceCard = ({ index, title, icon }) => {
   return (
     <Tilt className='w-full xs:w-[250px]'>
       <motion.div
+        key={true}
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
       >
@@ -27,18 +28,20 @@ const ServiceCard = ({ index, title, icon }) => {
 }
 
 const About = () => {
+  const { t } = useTranslation();
   return (
     <>
       <motion.div>
-        <p className={`${styles.sectionSubText}`}>Introduction</p>
-        <h2 className={`${styles.heroHeadText}`}>Overview.</h2>
+        <p className={`${styles.sectionSubText}`}>{t('work.headText')}</p>
+        <h2 className={`${styles.heroHeadText}`}>{t('work.headText')}</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3x1 leading-[30px]'
+        dangerouslySetInnerHTML={{ __html: t('work.description') }}
       >
-        Full Stack developer, passionate about learning new technologies and determined to improve my skills, <br /> i have experience with monolithic applications, microsservices archtecture applications, <br />  working with Java Spring Boot, Angular, C# .NET and Azure
+        
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
