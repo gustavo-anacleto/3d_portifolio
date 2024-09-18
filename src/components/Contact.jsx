@@ -27,6 +27,12 @@ const Contact = () => {
     setForm({ ...form, [name]: value })
   }
 
+  function validForm(form){
+    if(!form.name && !form.email && !form.message){
+      return false
+    }
+  }
+
   function handleSubmit(e) {
     e.preventDefault();
     setLoading(true)
@@ -37,7 +43,10 @@ const Contact = () => {
       to_email: MY_EMAIL,
       message: form.message
     }
-
+    if(!validForm(form)){
+      alert("Invalid fields to send email!")
+      return
+    }
     emailjs.send(
       SERVICE_ID,
       TEMPLATE_ID,
