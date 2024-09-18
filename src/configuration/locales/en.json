@@ -16,7 +16,28 @@
   },
   "experience": {
     "headText": "What i have done so far",
-    "subText": "Work Experience and Technologies."
+    "subText": "Work Experience and Technologies.",
+    "exp-1": {
+      "title": "Half Digital Solutions",
+      "points": [
+        "Studying and developing personal projects to improve my technical knowledge",
+        "Learning advanced contents in C#, .NET Framework and Entity Framework, OData"
+      ]
+    },
+    "exp-2": {
+      "title": "Full Stack Developer",
+      "points": [
+        "Developing and maintaining web applications using Java and Angular as main technologies.",
+        "Working with microsservices archtecture in back-end(Java Spring Boot) and front-end(SPA), using Azure Service Bus to management data between microsservices.",
+        "Using PostgreeSQL to management data of applications.",
+        "Making Authentication and Authorization process and user management with Keycloak.",
+        "Implementing CI/CD to meet project demands with more agility and efficiency.",
+        "Organizing application infrastructure and managing development squads with Azure and AzureDevOps.",
+        "Construct REST APIs.",
+        "Applying some design patterns improve software scalability like Factory, Builder, Strategy.",
+        "Improving software integrity with Unit Test, working with TDD methodology"
+      ]
+    }
   },
   "projects": {
     "headText": "Meu trabalho",
@@ -25,5 +46,9 @@
   "contact": {
     "headText": "Entre em contato",
     "subText": "Contato."
+  },
+  "service": {
+    "frontend-developer": "Front End Developer",
+    "backend-developer": "Front End Developer"
   }
 }

@@ -16,6 +16,7 @@ i18n.use(initReactI18next).init({
   },
   lng: "pt", // Idioma padrão
   fallbackLng: "en", // Idioma de fallback
+  returnObjects: true,
   interpolation: {
     escapeValue: false, // React já faz a sanitização
   },

@@ -35,7 +35,14 @@ const Contact = () => {
 
   function handleSubmit(e) {
     e.preventDefault();
+    
+    if (!validForm(form)) {
+      alert("Invalid fields to send email!")
+      return
+    }
+    
     setLoading(true)
+    
     const informationsToMountEmail = {
       from_name: form.name,
       to_name: 'Gustavo Anacleto',
@@ -43,10 +50,7 @@ const Contact = () => {
       to_email: MY_EMAIL,
       message: form.message
     }
-    if(!validForm(form)){
-      alert("Invalid fields to send email!")
-      return
-    }
+
     emailjs.send(
       SERVICE_ID,
       TEMPLATE_ID,

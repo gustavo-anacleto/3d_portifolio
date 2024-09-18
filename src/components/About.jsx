@@ -6,7 +6,8 @@ import { services } from '../constants'
 import { fadeIn } from '../utils/motion'
 import { SectionWrapper } from '../hoc'
 import { useTranslation } from 'react-i18next'
-const ServiceCard = ({ index, title, icon }) => {
+import { t } from 'i18next'
+const ServiceCard = ({ index, id, title, icon }) => {
   return (
     <Tilt className='w-full xs:w-[250px]'>
       <motion.div
@@ -20,7 +21,7 @@ const ServiceCard = ({ index, title, icon }) => {
           speed: 450
         }} className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'>
           <img src={icon} alt={title} className='w-16 h-16 object-contain' />
-          <h3 className='text-white text-[20px] font-bold text-center'>{title}</h3>
+          <h3 className='text-white text-[20px] font-bold text-center'>{id ? t(`service.${id}`) : title}</h3>
         </div>
       </motion.div>
     </Tilt>
@@ -33,7 +34,7 @@ const About = () => {
     <>
       <motion.div>
         <p className={`${styles.sectionSubText}`}>{t('work.headText')}</p>
-        <h2 className={`${styles.heroHeadText}`}>{t('work.headText')}</h2>
+        <h2 className={`${styles.heroHeadText}`}>{t('work.subText')}</h2>
       </motion.div>
 
       <motion.p
@@ -41,7 +42,7 @@ const About = () => {
         className='mt-4 text-secondary text-[17px] max-w-3x1 leading-[30px]'
         dangerouslySetInnerHTML={{ __html: t('work.description') }}
       >
-        
+
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

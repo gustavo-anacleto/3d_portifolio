@@ -3,21 +3,14 @@ import {
   backend,
   creator,
   web,
-  javascript,
   typescript,
-  html,
-  css,
   reactjs,
   tailwind,
-  nodejs,
   mongodb,
   git,
-  figma,
   docker,
   bosch,
   driveB,
-  jobit,
-  tripguide,
   dotnet,
   csharp,
   angular,
@@ -45,11 +38,13 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Front End Developer",
+    id:'frontend-developer',
+    title:"Front End Developer",
     icon: web,
   },
   {
-    title: "Back End Developer",
+    title:"Back End Developer",
+    id:'backend-developer',
     icon: backend,
   },
   {
@@ -139,6 +134,7 @@ const technologies = [
 
 const experiences = [
   {
+    id:'exp-1',
     title: "Half Digital Solutions",
     company_name: "Bosch",
     icon: bosch,
@@ -150,6 +146,7 @@ const experiences = [
     ],
   },
   {
+    id:'exp-2',
     title: "Full Stack Developer",
     company_name: "Bosch",
     icon: bosch,

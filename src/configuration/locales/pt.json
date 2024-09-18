@@ -15,16 +15,45 @@
     "subText": "Visão Geral.",
     "description": "Desenvolvedor Full Stack, apaixonado por aprender novas tecnologias e determinado a aprimorar minhas habilidades,<br /> Tenho experiência com aplicações monolíticas e arquitetura de microsserviços,<br /> trabalhando com Java Spring Boot, Angular, C# .NET e Azure."
   },
+  "points": [
+    "Estudando e desenvolvendo projetos pessoais para melhorar meu conhecimento técnico",
+    "Aprendendo conteúdos avançados em C#, .NET Framework e Entity Framework, OData"
+  ],
   "experience": {
     "headText": "O que eu fiz até agora",
-    "subText": "Experiência no mercado e Tecnologias."
+    "subText": "Experiência no mercado e Tecnologias.",
+    "exp-1": {
+      "title": "Meio Oficial de Soluções Digitais",
+      "points": [
+        "Estudando e desenvolvendo projetos pessoais para melhorar meu conhecimento técnico",
+        "Aprendendo conteúdos avançados em C#, .NET Framework e Entity Framework, OData"
+      ]
+    },
+    "exp-2": {
+      "title": "Desenvolvedor Full Stack",
+      "points": [
+        "Desenvolvendo e mantendo aplicações web usando Java e Angular como principais tecnologias",
+        "Trabalhando com arquitetura de microsserviços no back-end (Java Spring Boot) e front-end (SPA), utilizando Azure Service Bus para gerenciar dados entre microsserviços",
+        "Usando PostgreSQL para gerenciamento de dados das aplicações",
+        "Realizando processos de Autenticação e Autorização e gerenciamento de usuários com Keycloak",
+        "Implementando CI/CD para atender às demandas do projeto com mais agilidade e eficiência",
+        "Organizando a infraestrutura da aplicação e gerenciando squads de desenvolvimento com Azure e AzureDevOps",
+        "Construindo APIs REST",
+        "Aplicando alguns padrões de design para melhorar a escalabilidade do software, como Factory, Builder, Strategy",
+        "Melhorando a integridade do software com Testes Unitários, trabalhando com a metodologia TDD"
+      ]
+    }
   },
-  "projects": {
+  "project": {
     "headText": "Meu trabalho",
     "subText": "Projetos."
   },
   "contact": {
     "headText": "Entre em contato",
     "subText": "Contato."
+  },
+  "service": {
+    "frontend-developer": "Desenvolvedor Front End",
+    "backend-developer": "Desenvolvedor Front End"
   }
 }
