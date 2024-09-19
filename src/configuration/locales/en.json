@@ -22,7 +22,8 @@
       "points": [
         "Studying and developing personal projects to improve my technical knowledge",
         "Learning advanced contents in C#, .NET Framework and Entity Framework, OData"
-      ]
+      ],
+      "date": "Feb 2023 - Dec 2024"
     },
     "exp-2": {
       "title": "Full Stack Developer",
@@ -35,20 +36,39 @@
         "Organizing application infrastructure and managing development squads with Azure and AzureDevOps.",
         "Construct REST APIs.",
         "Applying some design patterns improve software scalability like Factory, Builder, Strategy.",
-        "Improving software integrity with Unit Test, working with TDD methodology"
-      ]
+        "Improving software integrity with Unit Test, working with TDD methodology",
+        "Working with the agile SCRUM methodology, as the main conceptual framework"
+      ],
+      "date": "Jan 2024 - Current Role"
     }
   },
-  "projects": {
-    "headText": "Meu trabalho",
-    "subText": "Projetos."
+  "project": {
+    "headText": "My Works",
+    "subText": "Projects.",
+    "description": "Here are some of the projects I have worked on, contributing both technically and in strategic decisions regarding business rules. Through them, I was able to improve my hard skills and soft skills, gaining the necessary experience to drive future projects forward.",
+    "driveb": "DriveB fleet is a digital solution that aims to facilitate fleet management and preventive and corrective maintenance of your vehicles. Through an online platform and application, DriveB connects managers, drivers and workshops and optimizes their administrative and operational processes.",
+    "dios": "The daily operations of an industry involve various systems working simultaneously, consuming not only energy but also human effort to manage electrical installations and lighting. With this in mind, we developed DiOS (Digital Infrastructure Operational System), an application capable of managing all AIoT devices connected in smart buildings and cities—focused on optimizing resources, contributing to a sustainable future, and advancing technology.",
+    "cyclone": "Our parking lot offers a technological solution for managing customers and vehicles. Through an integrated platform, the administrator can register vehicles, monitor entry and exit status, view the parking history, and access customer records"
   },
   "contact": {
-    "headText": "Entre em contato",
-    "subText": "Contato."
+    "headText": "Get in touch",
+    "subText": "Contact.",
+    "label-name": "Your Name",
+    "label-email": "Your Email",
+    "label-message": "Your Message",
+    "input-name": "What's your name?",
+    "input-email": "What's your email?",
+    "input-message": "What do you want to say?"
   },
   "service": {
     "frontend-developer": "Front End Developer",
     "backend-developer": "Front End Developer"
-  }
+  },
+  "years": "years",
+  "experience-time": "Experience time:",
+  "button-send": "Send",
+  "button-sending": "Sending",
+  "email-success": "Thank you. I will get back to you as soon as possible.",
+  "email-error": "Something went wrong! Try again latter or send the email directly to guguzim.anacleto@gmail.com",
+  "invalid-fields":"Invalid fields to send email!"
 }

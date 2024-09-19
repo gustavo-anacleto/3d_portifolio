@@ -27,7 +27,8 @@
       "points": [
         "Estudando e desenvolvendo projetos pessoais para melhorar meu conhecimento técnico",
         "Aprendendo conteúdos avançados em C#, .NET Framework e Entity Framework, OData"
-      ]
+      ],
+      "date":"Fev 2023 - Dez 2024"
     },
     "exp-2": {
       "title": "Desenvolvedor Full Stack",
@@ -40,20 +41,39 @@
         "Organizando a infraestrutura da aplicação e gerenciando squads de desenvolvimento com Azure e AzureDevOps",
         "Construindo APIs REST",
         "Aplicando alguns padrões de design para melhorar a escalabilidade do software, como Factory, Builder, Strategy",
-        "Melhorando a integridade do software com Testes Unitários, trabalhando com a metodologia TDD"
-      ]
+        "Melhorando a integridade do software com Testes Unitários, trabalhando com a metodologia TDD",
+        "Atuando com a metodologia agil SCRUM, como principal framework conceitual"
+      ],
+      "date":"Jan 2024 - Cargo Atual"
     }
   },
   "project": {
     "headText": "Meu trabalho",
-    "subText": "Projetos."
+    "subText": "Projetos.",
+    "description": "Esses são alguns dos projetos nos quais eu trabalhei, contribuindo tanto tecnicamente, quanto em decisões estratégicas nas regras de negócio. Com eles pude aprimorar minhas hard skills e minhas soft skills, ganhando a experiência necessária para alavancar projetos futuros.",
+    "driveb": "O DriveB fleet é uma solução digital que tem como objetivo facilitar a gestão de frota e de manutenções preventiva e corretiva de seus veículos. Por meio de uma plataforma online e pelo aplicativo, o DriveB conecta gestores, motoristas e oficinas e otimiza seus processos administrativos e operacionais.",
+    "dios": "O dia a dia de uma indústria tem diferentes sistemas que trabalham simultaneamente e consomem, além de energia, esforços humanos para gerenciar as instalações elétricas e iluminação. Pensando nisso, desenvolvemos o DiOS (Digital Infrastructure Operational System), aplicativo capaz de gerenciar todos os dispositivos AIoT conectados em prédios e cidades inteligentes - com foco em otimizar recursos, contribuir para um futuro sustentável e trazer a tecnologia.",
+    "cyclone": "Nosso estacionamento oferece uma solução tecnológica para gerenciamento de clientes e veículos. Através de uma plataforma integrada, o administrador pode realizar o cadastro de seus veículos, acompanhar o status de entrada e saída, visualizar o histórico de permanência e ter acesso ao histórico de clientes."
   },
   "contact": {
     "headText": "Entre em contato",
-    "subText": "Contato."
+    "subText": "Contato.",
+    "label-name": "Seu nome",
+    "label-email": "Seu email",
+    "label-message": "Sua mensagem",
+    "input-name": "Qual seu nome?",
+    "input-email": "Qual seu email?",
+    "input-message": "Qual a sua mensagem?"
   },
   "service": {
     "frontend-developer": "Desenvolvedor Front End",
     "backend-developer": "Desenvolvedor Front End"
-  }
+  },
+  "years": "anos",
+  "experience-time": "Tempo de experiencia:",
+  "button-send":"Enviar",
+  "button-sending":"Enviando",
+  "email-success":"Obrigado. Te responderei assim que possível",
+  "email-error":"Algo deu errado! Tente novamente mais tarde ou envie o email diretamente para guguzim.anacleto@gmail.com",
+  "invalid-fields":"Campos inválidos, revise o formulário"
 }

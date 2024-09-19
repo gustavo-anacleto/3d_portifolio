@@ -12,6 +12,7 @@ import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
+import linkedin from "./linkedin.svg";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
@@ -35,8 +36,8 @@ import bosch from "./company/bosch.png";
 import tesla from "./company/tesla.png";
 
 import driveB from "./driveB.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import dios from "./dios.png";
+import cyclone from "./cyclone.png";
 
 export {
   logo,
@@ -51,6 +52,7 @@ export {
   docker,
   figma,
   git,
+  linkedin,
   html,
   javascript,
   mongodb,
@@ -64,8 +66,7 @@ export {
   bosch,
   tesla,
   driveB,
-  jobit,
-  tripguide,
+  cyclone,
   dotnet,
   csharp,
   angular,
@@ -74,4 +75,5 @@ export {
   azureDevops,
   java,
   postgreSql,
+  dios
 };

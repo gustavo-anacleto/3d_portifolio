@@ -6,8 +6,6 @@ import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 import { useTranslation } from "react-i18next";
-import { useEffect } from "react";
-
 
 const ExperienceCard = ({ experience }) => {
   const { t } = useTranslation();
@@ -15,7 +13,7 @@ const ExperienceCard = ({ experience }) => {
     <VerticalTimelineElement
       contentStyle={{ backgroundColor: "#1d1836", color: "#fff" }}
       contentArrowStyle={{ borderRight: "7px solid #232631" }}
-      date={experience.date}
+      date={t(`experience.${experience.id}.date`)}
       iconStyle={{ background: experience.iconBg }}
       icon={
         <div className="w-full h-full flex justify-center items-center">

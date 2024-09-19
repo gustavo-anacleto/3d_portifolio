@@ -19,6 +19,8 @@ import {
   azureDevops,
   java,
   postgreSql,
+  dios,
+  cyclone
 } from "../assets";
 
 export const navLinks = [
@@ -139,7 +141,6 @@ const experiences = [
     company_name: "Bosch",
     icon: bosch,
     iconBg: "#383E56",
-    date: "Feb 2023 - Dec 2024",
     points: [
       "Studying and developing personal projects to improve my technical knowledge",
       "Learning advanced contents in C#, .NET Framework and Entity Framework, OData",
@@ -151,7 +152,6 @@ const experiences = [
     company_name: "Bosch",
     icon: bosch,
     iconBg: "#E6DEDD",
-    date: "Jan 2024 - Current Role",
     points: [
       "Developing and maintaining web applications using Java and Angular as main technologies.",
       "Working with microsservices archtecture in back-end(Java Spring Boot) and front-end(SPA), using Azure Service Bus to management data between microsservices.",
@@ -195,9 +195,8 @@ const testimonials = [
 
 const projects = [
   {
+    id: "driveb",
     name: "Drive B",
-    description:
-      "DriveB fleet is a digital solution that aims to facilitate fleet management and preventive and corrective maintenance of your vehicles. Through an online platform and application, DriveB connects managers, drivers and workshops and optimizes their administrative and operational processes.",
     tags: [
       {
         name: "java",
@@ -217,6 +216,53 @@ const projects = [
       },
     ],
     image: driveB,
+  },
+  {
+    id: "dios",
+    name: "DiOS",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodeJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "csharp",
+        color: "pink-text-gradient",
+      },
+      {
+        name: ".net framwork",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "angular",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: dios,
+  },
+  {
+    id: "cyclone",
+    name: "Cyclone Manager",
+    tags: [
+      {
+        name: "entity framework",
+        color: "green-text-gradient",
+      },
+      {
+        name: ".net framwork",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "angular",
+        color: "pink-text-gradient",
+      },
+    ],
+    source_code_link: "https://github.com/orgs/Os-Rapazes/repositories",
+    image: cyclone,
   },
   // {
   //   name: "Job IT",
