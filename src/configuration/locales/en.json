@@ -1,5 +1,5 @@
 {
-  "roleTitleNavBar": "Full Stack Enginieer",
+  "roleTitleNavBar": "Full Stack Engineer",
   "navLink": {
     "about": "About Me",
     "work": "Work",
@@ -7,7 +7,7 @@
   },
   "hero": {
     "headText": "Hi, i'm ",
-    "subText": "I work as a Full Stack Developer in Microsservices Achtecture, <br /> with Java(Spring Boot) and Angular"
+    "subText": "I work as a Full Stack Developer in Microsservices Architecture, <br /> with Java(Spring Boot) and Angular"
   },
   "work": {
     "headText": "Introduction",
@@ -62,7 +62,7 @@
   },
   "service": {
     "frontend-developer": "Front End Developer",
-    "backend-developer": "Front End Developer"
+    "backend-developer": "Back End Developer"
   },
   "years": "years",
   "experience-time": "Experience time:",
